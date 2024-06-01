@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Website.css">
+        <title>Projekat</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA Comatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <script src="Website.js"></script>
+        <div class="kontejner">
+            <header >
+                <div class="logo">
+                    <img id="logyy" src="Slike1/Logo3.png">
+                </div>
+                <div class="dugmad">
+                    <button class="dugme2" onclick="openCart()">
+                        <img class="korpica" src="Slike1/icons8-cart-100.png">
+                    </button>
+                    <p id="count">0</p>
+                </div>
+                <div class="container">
+                    <button class="jedan"><a href="#uvod">Home</a></button>
+                    <button class="dva"><a href="#O-nama">About</a></button>
+                    <button class="tri"><a href="#meni">Menu</a></button>
+                    <button class="cetiri"><a href="#Novo">New</a></button>
+                    <button class="pet"><a href="#Komentari">Review</a></button>
+                    <button class="sest"><a href="#Login">Login</a></button>
+                </div>
+            </header>
+        </div>
+
+        <div class="hihi">
+            <div id="uvod">
+                <img class="slika1" src="Slike1/Coffee.png">
+                <h1 ><em><u>Srećni ljudi čitaju i piju kafu</u></em></h1>
+                <p class="hejj">Dobrodošli u našu oazu ukusa i inspiracije! Dopustite nam da vas vodimo 
+                    na putovanje kroz svet kafe gde se susreću tradicija i inovacija. 
+                    Sa svakim gutljajem, otkrijte bogatstvo 
+                    aroma i zadovoljstvo koje može doneti samo pažljivo odabrana kafa i dobra knjiga. 
+                    Pripremite se da istražite našu kolekciju, jer svaki proizvod 
+                    krije svoju jedinstvenu priču koja čeka da bude otkrivena. Dobrodošli u svet 
+                    naših proizvoda – gde se 
+                    svaki trenutak pretvara u poseban doživljaj.
+                </p>
+            </div>
+    
+            <div id="O-nama">
+                <div class="kafidzonka">
+                    <h2 class="mi">O NAMA</h2>
+                    <img class="fotka" src="Slike1/slika1.png">
+                    <div class="slika-tekst">
+                        <h3 class="naslov3">Šta čini našu kafu tako posebnom?</h3>
+                        <p class="dvojka">
+                            Naša posebnost leži u spoju izvanrednih ukusa i 
+                            blagotvornih svojstava. Uz našu kolekciju 
+                            specijalnih kafa obogaćenih ginkom, pružamo vam 
+                            ne samo vrhunski kvalitet i zadovoljstvo u svakom 
+                            gutljaju, već i dodatnu dozu energije i mentalne 
+                            jasnoće. Ginko, poznat po svojim koristima za mozak 
+                            i koncentraciju, čini naše kafe ne samo ukusnim 
+                            iskustvom, već i osvežavajućim i revitalizirajućim 
+                            napitkom za vaš um i telo. Saznajte zašto su naše 
+                            kafe posebne - jer svaki gutljaj donosi harmoniju 
+                            okusa i blagostanje za vaše celokupno iskustvo.<br><br>
+                            <button class="nesto1"><a href="https://naturalwealth.rs/zivite-zdravije/iz-prirode-zdravlje/ginkgo-biloba-najbolje-iz-prirode-oslabljenu-cirkulaciju-46/" 
+                                target="_blank">
+                                Saznajte više
+                            </a></button>
+                        </p>
+    
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="showCart">
+                <div id="meni">
+                    <h2 class="naslov2">MENI</h2>
+                    <div id="divZaPrikaz">
+                        <div class="naslov4">
+                            <h3 class="Podnaslov">KAFE</h3>
+                        </div>
+                    </div>
+        
+                    <div id="divPrikaz">
+                        <div class="naslov5">
+                            <h3 class="Podnaslov1">ČAJEVI</h3>
+                        </div>
+                    </div>
+        
+                    <div id="divPrikaz2">
+                        <div class="naslov6">
+                            <h3 class="Podnaslov2">VOĆNI PROIZVODI</h3>
+                        </div>
+                    </div>
+        
+                    <div id="divPrikaz3">
+                        <div class="naslov7">
+                            <h3 class="Podnaslov3">KROASANI</h3>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="Novo">
+                    <h3 class="specijaliteti">SPECIJALITETI</h3>
+                    <div id="divPrikaz5"></div>
+                </div>
+    
+                <div class="cartTab" style="right: -400px;">
+                    <h1>Shopping Cart</h1>
+                    <div class="Lista">
+                        <div class="item">
+                            <div id="divZaPrikaz9"></div>
+                            <div class="kolicina">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ukupno">
+                    </div>
+                    <div class="btn">
+                        <button class="Zatvori" onclick="closeCart()">ZATVORI</button>
+                        <button class="Placanje" onclick="ruganje()">PLAĆANJE</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="Komentari">
+                <h3 class="kom">Review</h3>
+                <div id="divPrikaz6"></div>
+                <div class="ostavi">
+                    <h4 class="misljenje" >VAŠE MIŠLJENJE NAM JE VAŽNO!</h4>
+                    <h5 class="vase">Podelite Vaše iskustvo sa nama </h5>
+                    <form>
+                        <label>Ime i prezime</label>
+                        <input style="width: 300px; height: 25px;" type="text" id="ime"><br><br>
+                        <label>Komentar</label>
+                        <textarea style="width: 300px; height: 180px;"></textarea><br><br>
+                        <button class="dugmic" onclick="hvala()">Prosledi</button>
+                    </form>
+                </div>
+            </div>
+    
+            <div id="Login">
+                <div id="Forma">
+                    <form class="hi">
+                        <h2 class="lo">Login</h2>
+                        <label class="lelo">Ime</label><br>
+                        <input type="text" id="name"><br>
+                        <label class="lelo">Prezime</label><br>
+                        <input type="text" id="surname"><br>
+                        <label class="lelo">Email</label><br>
+                        <input type="email" id="mejl"><br>
+                        <label class="lelo">Lozinka</label><br>
+                        <input type="password" id="lozinka"><br>
+                        <button id="hello">Prosledi</button>
+                    </form>
+                </div>
+                <div id="he"></div>
+            </div>
+        </div>
+
+           
+        <script>
+            function prikazi(idDivZaPrikaz, prof)
+            {
+                var divSpoljasnji = document.getElementById(idDivZaPrikaz);
+                var ul = document.createElement("ul");
+                var li1 = document.createElement("li");
+                var li2 = document.createElement("li");
+                var li3 = document.createElement("li");
+                li1.classList.add("Naziv");
+                li2.classList.add("Cijena");
+
+                var dugme=document.createElement("button");
+                dugme.addEventListener("click", function() {
+                    dodajUShoppingListu(prof);
+                });
+                dugme.classList.add("Dugmence");
+
+                dugme.innerHTML="Dodaj";
+                li1.innerHTML=prof.ime;
+                li2.innerHTML=prof.cena + " din.";
+                li3.appendChild(dugme);
+
+                var div2=document.createElement("div");
+                div2.classList.add("unutrasnjiDiv");
+                var slika=document.createElement("img");
+                slika.src=prof.fotografija;
+                slika.style.borderRadius = "10px";
+
+                div2.appendChild(slika);
+                ul.appendChild(li1);
+                ul.appendChild(li2);
+                ul.appendChild(li3);
+                div2.appendChild(ul);
+                divSpoljasnji.appendChild(div2);
+            }
+
+
+            function dodajUShoppingListu(prof) {
+            var divZaPrikaz9 = document.getElementById("divZaPrikaz9");
+            var ul = document.createElement("ul");
+            var li1 = document.createElement("li");
+            var li2 = document.createElement("li");
+            ul.classList.add("neces2");
+
+            li1.classList.add("neces");
+            li2.classList.add("neces1");
+
+            li1.innerHTML = prof.ime;
+            li2.innerHTML = prof.cena + " din.";
+
+            ul.appendChild(li1);
+            ul.appendChild(li2);
+            divZaPrikaz9.appendChild(ul);
+
+            sabiranje();
+            brojanje();
+        }
+
+        function brojanje() {
+            var countElement = document.getElementById("count");
+            var indeks = parseInt(countElement.textContent);
+            indeks += 1;
+            countElement.textContent = indeks;
+        }
+
+        function sabiranje() {
+            var divZaPrikaz9 = document.getElementById("divZaPrikaz9");
+            var ukupno = 0;
+            var proizvodi = Array.from(divZaPrikaz9.querySelectorAll("li.neces1"));
+            proizvodi.forEach(function(proizvod) {
+                var cena = parseFloat(proizvod.textContent.split(" ")[0]);
+                ukupno += cena;
+            });
+
+            var div99 = document.getElementById("ukupno");
+            div99.textContent = "UKUPNO: " + ukupno.toFixed(2) + " din.";
+        }
+
+            var prof1 = {
+                ime: "Turska kafa",
+                cena: 80.00,
+                fotografija: "Slike1/Turska.png"
+            };
+
+            var prof2 = {
+                ime: "Espreso",
+                cena: 120.00,
+                fotografija: "Slike1/Espreso.png"
+            };
+            var prof3 = {
+                ime: "Macchiato",
+                cena: 150.00,
+                fotografija: "Slike1/macchiato.png"
+            };
+            var prof4 = {
+                ime: "Latte",
+                cena: 170.00,
+                fotografija: "Slike1/Latte.png"
+            };
+            var prof5 = {
+                ime: "Mocha",
+                cena: 180.00,
+                fotografija: "Slike1/Mocha.png"
+            };
+            var prof6 = {
+                ime: "Cappucchino",
+                cena: 180.00,
+                fotografija: "Slike1/Cappucchino.png"
+            };
+            var prof7 = {
+                ime: "Americano",
+                cena: 150.00,
+                fotografija: "Slike1/Amerikano.png"
+            };
+            var prof8 = {
+                ime: "Ice Coffees",
+                cena: 200.00,
+                fotografija: "Slike1/IceCoffe.png"
+            };
+
+            prikazi("divZaPrikaz", prof1);
+            prikazi("divZaPrikaz", prof2);
+            prikazi("divZaPrikaz", prof3);
+            prikazi("divZaPrikaz", prof4);
+            prikazi("divZaPrikaz", prof5);
+            prikazi("divZaPrikaz", prof6);
+            prikazi("divZaPrikaz", prof7);
+            prikazi("divZaPrikaz", prof8);
+
+
+
+
+            function prikazi2(){
+                var divSpoljasnji1 = document.getElementById(idDivPrikaz);
+                var ul = document.createElement("ul");
+                var li1 = document.createElement("li");
+                var li2 = document.createElement("li");
+                var li3 = document.createElement("li");
+
+                var dugme1=document.createElement("button");
+                dugme1.addEventListener("click", function(){
+                    alert("Uspesno!");
+                });
+
+                dugme1.innerHTML="Dodaj";
+                li1.innerHTML=prof.ime;
+                li2.innerHTML=prof.cena + " din.";
+                li3.appendChild(dugme1);
+
+                var div3=document.createElement("div");
+                div3.classList.add("unutrasnjiDiv1");
+                var slika5=document.createElement("img");
+                slika5.src=prof.fotografija;
+
+                div3.appendChild(slika5);
+                ul.appendChild(li1);
+                ul.appendChild(li2);
+                ul.appendChild(li3);
+                div3.appendChild(ul);
+                divSpoljasnji1.appendChild(div3);
+            }
+
+            var prof1 = {
+                ime: "Crni čaj",
+                cena: 90.00,
+                fotografija: "Slike1/Crni-caj.png"
+            };
+            var prof2 = {
+                ime: "Zeleni čaj",
+                cena: 90.00,
+                fotografija: "Slike1/Zeleni-caj.png"
+            };
+            var prof3 = {
+                ime: "Beli čaj",
+                cena: 90.00,
+                fotografija: "Slike1/Beli-caj.png"
+            };
+            var prof4 = {
+                ime: "Herbalni čajevi",
+                cena: 80.00,
+                fotografija: "Slike1/Herbalni-cajevi.png"
+            };
+
+            prikazi("divPrikaz", prof1);
+            prikazi("divPrikaz", prof2);
+            prikazi("divPrikaz", prof3);
+            prikazi("divPrikaz", prof4);
+
+            function prikazi3(){
+                var divSpoljasnji2 = document.getElementById(idDivPrikaz1);
+                var ul = document.createElement("ul");
+                var li1 = document.createElement("li");
+                var li2 = document.createElement("li");
+                var li3 = document.createElement("li");
+
+                var dugme2=document.createElement("button");
+                dugme2.addEventListener("click", function(){
+                    alert("Uspesno!");
+                });
+
+                dugme2.innerHTML="Dodaj";
+                li1.innerHTML=prof.ime;
+                li2.innerHTML=prof.cena + " din.";
+                li3.appendChild(dugme2);
+
+                var div4=document.createElement("div");
+                div4.classList.add("unutrasnjiDiv2");
+                var slika6=document.createElement("img");
+                slika6.src=prof.fotografija;
+
+                div4.appendChild(slika6);
+                ul.appendChild(li1);
+                ul.appendChild(li2);
+                ul.appendChild(li3);
+                div4.appendChild(ul);
+                divSpoljasnji2.appendChild(div4);
+            }
+            var prof1 = {
+                ime: "Jagoda smoothie",
+                cena: 210.00,
+                fotografija: "Slike1/Jagoda.png"
+            };
+            var prof2 = {
+                ime: "Jabuka smoothie",
+                cena: 210.00,
+                fotografija: "Slike1/Jabuka.png"
+            };
+            var prof3 = {
+                ime: "Narandža smoothie",
+                cena: 210.00,
+                fotografija: "Slike1/narandza.png"
+            };
+            var prof4 = {
+                ime: "Kivi smoothie",
+                cena: 210.00,
+                fotografija: "Slike1/Kiwi.png"
+            };
+            var prof5 = {
+                ime: "Ananas smoothie",
+                cena: 210.00,
+                fotografija: "Slike1/ananas.png"
+            };
+            var prof6 = {
+                ime: "Banana smoothie",
+                cena: 210.00,
+                fotografija: "Slike1/banana.png"
+            };
+            var prof7 = {
+                ime: "Voćna salata",
+                cena: 270.00,
+                fotografija: "Slike1/VocniKup.png"
+            };
+            var prof8 = {
+                ime: "Limunada",
+                cena: 170.00,
+                fotografija: "Slike1/Lemonada.png"
+            };
+            var prof9 = {
+                ime: "Malinada",
+                cena: 210.00,
+                fotografija: "Slike1/Malinada.png"
+            };
+            var prof10 = {
+                ime: "Lubenada",
+                cena: 220.00,
+                fotografija: "Slike1/Lubenicada.png"
+            };
+
+            prikazi("divPrikaz2", prof1);
+            prikazi("divPrikaz2", prof2);
+            prikazi("divPrikaz2", prof3);
+            prikazi("divPrikaz2", prof4);
+            prikazi("divPrikaz2", prof5);
+            prikazi("divPrikaz2", prof6);
+            prikazi("divPrikaz2", prof7);
+            prikazi("divPrikaz2", prof8);
+            prikazi("divPrikaz2", prof9);
+            prikazi("divPrikaz2", prof10);
+
+
+            function prikazi4(){
+                var divSpoljasnji3 = document.getElementById(idDivPrikaz1);
+                var ul = document.createElement("ul");
+                var li1 = document.createElement("li");
+                var li2 = document.createElement("li");
+                var li3 = document.createElement("li");
+
+                var dugme3=document.createElement("button");
+                dugme3.addEventListener("click", function(){
+                    alert("Uspesno!");
+                });
+
+                dugme3.innerHTML="Dodaj";
+                li1.innerHTML=prof.ime;
+                li2.innerHTML=prof.cena + " din.";
+                li3.appendChild(dugme3);
+
+                var div5=document.createElement("div");
+                div5.classList.add("unutrasnjiDiv3");
+                var slika7=document.createElement("img");
+                slika7.src=prof.fotografija;
+
+                div5.appendChild(slika7);
+                ul.appendChild(li1);
+                ul.appendChild(li2);
+                ul.appendChild(li3);
+                div5.appendChild(ul);
+                divSpoljasnji3.appendChild(div5);
+            }
+            var prof1 = {
+                ime: "Kroasan pistaći",
+                cena: 250.00,
+                fotografija: "Slike1/Pistac.png"
+            };
+            var prof2 = {
+                ime: "Kroasan čokolada",
+                cena: 250.00,
+                fotografija: "Slike1/Cokolada.png"
+            };
+            var prof3 = {
+                ime: "Kroasan vanila",
+                cena: 210.00,
+                fotografija: "Slike1/VanilLa.png"
+            };
+
+            prikazi("divPrikaz3", prof1);
+            prikazi("divPrikaz3", prof2);
+            prikazi("divPrikaz3", prof3);
+
+
+
+            function prikazi5(){
+                var divSpoljasnji5 = document.getElementById(idDivPrikaz1);
+                var ul = document.createElement("ul");
+                var li1 = document.createElement("li");
+                var li2 = document.createElement("li");
+                var li3 = document.createElement("li");
+
+                var dugme4=document.createElement("button");
+                dugme4.addEventListener("click", function(){
+                    alert("Uspesno!");
+                });
+
+                dugme4.innerHTML="Dodaj";
+                li1.innerHTML=prof.ime;
+                li2.innerHTML=prof.cena + " din.";
+                li3.appendChild(dugme4);
+
+                var div6=document.createElement("div");
+                div6.classList.add("unutrasnjiDiv5");
+                var slika8=document.createElement("img");
+                slika8.src=prof.fotografija;
+
+                div6.appendChild(slika8);
+                ul.appendChild(li1);
+                ul.appendChild(li2);
+                ul.appendChild(li3);
+                div6.appendChild(ul);
+                divSpoljasnji4.appendChild(div6);
+            }
+            var prof1 = {
+                ime: "Kafa sa ginkom",
+                cena: 200.00,
+                fotografija: "Slike1/Ginko2.png"
+            };
+            var prof2 = {
+                ime: "Čaj sa ginkom",
+                cena: 110.00,
+                fotografija: "Slike1/CajGinko.png"
+            };
+
+            prikazi("divPrikaz5", prof1);
+            prikazi("divPrikaz5", prof2);
+
+            
+            function prikazi6(idDivZaPrikaz, prof) {
+            var divSpoljasnji6 = document.getElementById(idDivZaPrikaz);
+            var ul = document.createElement("ul");
+            var li1 = document.createElement("li");
+            var li2 = document.createElement("li");
+            li1.classList.add("neko1");
+            li2.classList.add("neko2");
+
+            li1.innerHTML = prof.ime;
+            li2.innerHTML = prof.cena;
+
+            var div7 = document.createElement("div");
+            div7.classList.add("unutrasnjiDiv6");
+            var slika9 = document.createElement("img");
+            slika9.src = prof.fotografija;
+            slika9.classList.add("slidze");
+
+            div7.appendChild(slika9);
+            ul.appendChild(li1);
+            ul.appendChild(li2);
+            div7.appendChild(ul);
+            divSpoljasnji6.appendChild(div7);
+        }
+
+        var prof1 = {
+            ime: "Jasmina Romanić",
+            cena: "Kafić Verde Vista je prava oaza mira u užurbanom delu grada. Sa svojim prelepim zelenilom i prostranom terasom, idealno je mesto za opuštanje i uživanje u prirodi. Njihova ponuda uključuje raznovrsne vrste kafe i osvežavajućih napitaka. Posebno bih izdvojio njihov cappuccino, koji je savršeno balansiran i kremast. Osoblje je izuzetno ljubazno i profesionalno, što dodatno doprinosi prijatnom iskustvu.",
+            fotografija: "Slike1/download.jpg"
+        };
+        var prof2 = {
+            ime: "Jovan Marinković",
+            cena: "Ako ste pravi ljubitelj kafe, Verde Vista je mesto koje morate posetiti. Njihov meni je bogat i sadrži sve, od klasičnih espreso kafa do egzotičnih specijaliteta. Njihov espresso je jak i aromatičan, a baristi su vešti i strastveni u svom poslu. Ambijent je opuštajući, sa puno zelenila koje doprinosi prijatnoj atmosferi. Osoblje je uvek nasmejano i spremno da preporuči nešto novo iz svoje ponude.",
+            fotografija: "Slike1/download.jpg"
+        };
+        var prof3 = {
+            ime: "Sara Hamidović",
+            cena: "Verde Vista je kafić koji zrači toplinom i gostoprimstvom. Enterijer je moderan, ali istovremeno i udoban, sa puno prirodnog svetla i udobnim sedištima. Njihova ponuda uključuje sveže pripremljene kolače i peciva koji se savršeno slažu uz šoljicu kafe. Preporučujem da probate njihovu specijalnu hladnu kafu, koja je osvežavajuća i savršena za toplije dane. Mesto je idealno za prijateljske susrete ili poslovne sastanke.",
+            fotografija: "Slike1/download.jpg"
+        };
+
+        prikazi6("divPrikaz6", prof1);
+        prikazi6("divPrikaz6", prof2);
+        prikazi6("divPrikaz6", prof3);
+
+
+        function hvala(){
+            var nesto=document.getElementById("ime").value;
+            alert("Hvala " + nesto + "!");
+        }
+
+        function prijava(event){
+            var uzorak=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var emili=document.getElementById("mejl").value;
+            if(emili.match(uzorak)==null)
+            {
+                alert("UNESITE ISPRAVAN EMAIL!");
+                emili.value="";
+            }
+            else{
+                event.preventDefault(); // Sprečava podrazumevano ponašanje
+
+                var forma1 = document.getElementById("Forma");
+                forma1.style.marginLeft = "300px";
+
+                var zahvalnica = document.getElementById("he");
+                zahvalnica.innerHTML = ""; // Prazni div kako bi se izbeglo dodavanje duplih poruka
+
+                var huh = document.createElement("h2");
+                huh.style.color="white";
+                huh.textContent = "DOBRODOŠLI U NAŠU ZAJEDNICU!";
+
+                var pasus = document.createElement("p");
+                pasus.style.color="white";
+                pasus.textContent = "Hvala vam što ste se prijavili na naš sajt! Vaša podrška i interesovanje za naš kafić puno znače. Radujemo se što ćemo imati priliku da vas ugostimo u Verde Vista i pružimo vam nezaboravno iskustvo uživanja u našim specijalitetima. Pratite nas za najnovije vesti, posebne ponude i događaje.";
+
+                var pasus1 = document.createElement("p");
+                pasus1.style.color="white";
+                pasus1.innerHTML = "Srdačan pozdrav,<br>Tim kafića Verde Vista"; // Koristi innerHTML za HTML sadržaj
+
+                zahvalnica.appendChild(huh);
+                zahvalnica.appendChild(pasus);
+                zahvalnica.appendChild(pasus1);
+            }
+        }
+
+        var problem = document.getElementById("hello");
+        problem.addEventListener("click", prijava);
+
+
+        function openCart(){
+            var nesto2=document.querySelector(".cartTab");
+            nesto2.style.right="0px";
+            var isto=document.querySelector(".hihi");
+            isto.style.width="100%";
+        }
+
+        function closeCart(){
+            var nesto2=document.querySelector(".cartTab");
+            nesto2.style.right="-400px";
+            var suzeno=document.querySelector(".hihi");
+            isto.style.width="80%";
+        }
+
+        function openCart(){
+            var nesto2=document.querySelector(".cartTab");
+            nesto2.style.right="0px";
+            var isto=document.querySelector(".hihi");
+            isto.style.width="100%";
+        }
+
+        function ruganje(){
+            alert("KUĆA ČASTI AKO DATE 10 POENA!");
+        }
+    
+        </script>
+    </body>
+</html>

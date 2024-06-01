@@ -1,0 +1,636 @@
+body{
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    position: flex;
+
+}
+html { scroll-behavior: smooth;}
+header{
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    border-bottom: 1px solid grey;
+    background-color: black;
+    width: 100%;
+}
+.logo{
+    display: inline-block;
+    margin-top: 2px;
+    float: left;
+    margin-left: 40px;
+}
+#logyy{
+    width: 75px;
+    border-radius: 40px;
+}
+.dugme2{
+    border-style: none;
+    background-color: rgb(0, 0, 0);
+    width: 60px;
+    border-radius: 10px;
+}
+.korpica{
+    width: 50px;
+    float: right;
+}
+.dugmad{
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    margin-right:  40px;
+    height: 50px;
+}
+.dugme2:hover{
+    cursor: pointer;
+    background-color: rgb(101, 74, 16);
+    transition: all 0.3s ease;
+}
+.container{
+    display: inline-flex;
+    color: bisque;
+    border: 0;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+.jedan,.dva,.tri,.cetiri,.pet,.sest{
+    display: inline-block;
+    margin-left: 5%;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 17px;
+    color: bisque;
+    border-radius: 5px;
+}
+.jedan:hover, .dva:hover, .tri:hover, .cetiri:hover, .pet:hover, .sest:hover{
+    cursor: pointer;
+    background-color: rgb(101, 74, 16);
+    transition: all 0.3s ease;  
+}
+#uvod{
+    color: white;
+    display: inline-block;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px ;
+    box-shadow: 10px 5px 25px 10px rgb(53, 53, 53);
+}
+h1{
+    padding-bottom: 20px;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(146, 92, 44);
+    line-height: 50px;
+
+}
+.hejj{
+    color: bisque;
+    line-height: 25px;
+    float: right;
+    display: inline-block;
+    width: 40%;
+    margin-right: 200px;
+}
+a{
+    text-decoration: none;
+    color: bisque;
+}
+.dvojka{
+    color: bisque;
+    text-align: left;
+    display: inline-block;
+    width: 30%;
+    float: right;
+    margin-right: 250px;
+    margin-top: 10px;
+}
+.naslov3{
+    color: rgb(240, 174, 119);
+    text-align: left;
+    display: inline-block;
+    width: 30%;
+    float: right;
+    margin-right: 250px;
+
+    font-size: 26px;
+    text-align: left;
+}
+.kafidzonka{
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.slika1{
+    float: left;
+    display: inline-block;
+    border-radius: 20px;
+    margin-left: 70px;
+}
+.mi{
+    color: rgb(148, 107, 61);
+    text-align: center;
+    font-size: 40px;
+}
+.fotka{
+    float: left;
+    margin-left: 200px;
+    border-radius: 20px;
+    width: 430px;
+}
+.crno{
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 600px;
+}
+#O-nama{
+    box-shadow: 10px 5px 25px 10px rgb(53, 53, 53);
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.nesto1{
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    color: bisque;
+    background-color: rgb(87, 66, 10);
+}
+.nesto1:hover{
+    cursor: pointer;
+    background-color: rgb(255, 209, 109);
+    transition: all 0.3s ease;
+    color: black;
+}
+
+
+img {
+    width: 190px;
+}
+
+#divZaPrikaz {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 10px 5px 25px 10px rgb(53, 53, 53);
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    border-bottom: 5px solid rgb(141, 101, 63);;
+}
+
+.unutrasnjiDiv {
+    display: flex;
+    width: 32%;
+    height: 220px;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    color: rgb(238, 173, 135);
+}
+#meni{
+    margin-top: 100px;
+}
+.naslov2{
+    color: rgb(148, 107, 61);
+    text-align: center;
+    font-size: 40px;
+}
+ul{
+    list-style: none;
+}
+.slika1{
+    float: left;
+    display: inline-block;
+    border-radius: 40px;
+    margin-left: 70px;
+    width: 400px;
+    padding: 20px;
+}
+.Dugmence{
+    border-style: none;
+    border-radius: 15px;
+    background-color: bisque;
+    height: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+    width: 60px;
+}
+.Dugmence:hover{
+    background-color: rgb(138, 95, 42);
+    color: white;
+    cursor: pointer;
+}
+.Naziv{
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+}
+.Cijena{
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.Podnaslov{
+    text-align: center;
+    font-size: 25px;
+    color: bisque;
+}
+.naslov4{
+    width: 100%;
+    border-bottom: 5px solid rgb(141, 101, 63);
+}
+
+.Podnaslov1{
+    text-align: center;
+    font-size: 25px;
+    color: bisque;
+}
+.naslov5{
+    width: 100%;
+    border-bottom: 5px solid rgb(141, 101, 63);
+}
+#divPrikaz {
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 10px 5px 25px 0px rgb(53, 53, 53);
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    border-bottom: 5px solid rgb(141, 101, 63);;
+}
+
+.unutrasnjiDiv1 {
+    display: flex;
+    width: 32%;
+    height: 220px;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    color: rgb(238, 173, 135);
+}
+
+.Podnaslov2{
+    text-align: center;
+    font-size: 25px;
+    color: bisque;
+}
+.naslov6{
+    width: 100%;
+    border-bottom: 5px solid rgb(141, 101, 63);
+}
+#divPrikaz2 {
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 10px 5px 25px 0px rgb(53, 53, 53);
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    border-bottom: 5px solid rgb(141, 101, 63);;
+}
+
+.unutrasnjiDiv2 {
+    display: flex;
+    width: 32%;
+    height: 220px;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    color: rgb(238, 173, 135);
+}
+
+.Podnaslov3{
+    text-align: center;
+    font-size: 25px;
+    color: bisque;
+}
+.naslov7{
+    width: 100%;
+    border-bottom: 5px solid rgb(141, 101, 63);
+}
+#divPrikaz3 {
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 10px 5px 25px 0px rgb(53, 53, 53);
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    border-bottom: 5px solid rgb(141, 101, 63);;
+}
+
+.unutrasnjiDiv3 {
+    display: flex;
+    width: 32%;
+    height: 220px;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    color: rgb(238, 173, 135);
+}
+
+.specijaliteti{
+    color: rgb(148, 107, 61);
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+}
+#Novo{
+    margin: 140px 100px 50px 50px;
+    display: block;
+    box-shadow: 10px 5px 25px 10px rgb(53, 53, 53);
+    margin-right: 50px;
+}
+
+.unutrasnjiDiv5 {
+    display: flex;
+    width: 32%;
+    height: 220px;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    color: rgb(238, 173, 135);
+}
+#divPrikaz5 {
+    justify-content: center;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding-bottom: 80px;
+}
+
+.slidze{
+    width: 50px;
+    border-radius: 50px;
+    margin-left: 50px;
+}
+#divPrikaz6 {
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    height: 400px;
+}
+.unutrasnjiDiv6 {
+    display: flex;
+    width: 32%;
+    align-items: center;
+    justify-content: center;
+    color: rgb(238, 173, 135);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.kom{
+    color: rgb(148, 107, 61);
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+}
+.neko1{
+    text-decoration: bold;
+    margin-bottom: 12px;
+    font-size: large;
+}
+.neko2{
+    font-style: italic;
+}
+#Komentari{
+    box-shadow: 10px 5px 25px 10px rgb(53, 53, 53);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+}
+.ostavi{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+}
+#ime{
+    background-color: bisque;
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+textarea{
+    background-color: bisque;
+    margin-left: 19px;
+    border-radius: 15px;
+}
+form{
+    justify-content: center;
+}
+.dugmic{
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    background-color: rgb(255, 234, 189);
+    font-weight: bold;
+    border: 3px solid rgb(79, 50, 24);
+    margin-left: 100px;
+}
+.dugmic:hover{
+    background-color: rgb(79, 50, 24);
+    color: bisque;
+    border: 3px solid bisque;
+}
+.misljenje{
+    margin-left: 90px;
+}
+.vase{
+    margin-left: 90px;
+}
+
+#Login{
+    box-shadow: 10px 5px 25px 10px rgb(53, 53, 53);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    padding-bottom: 100px;;
+    color: bisque;
+}
+#Forma{
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin-left: 35%;
+    margin-right: auto;
+    border-top: 100px solid black;
+    background: url("Slike1/Pozadina.png");
+
+}
+.hi{
+    display: block;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(30%);
+    flex-direction: column;
+    display: flex;
+}
+.lo{
+    font-weight: normal;
+    font-size: 24px;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 40px;
+}
+.lelo{
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    margin: 0px;
+}
+#name, #surname, #mejl, #lozinka{
+    background: rgba(255, 255, 255, 0.3);
+    line-height: 30px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border: none;
+    color: white;
+}
+#hello{
+    background: rgb(106, 157, 115);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+#he{
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    width: 400px;
+    float: right;
+    margin-right: 10%;
+    margin-top: 200px;
+    text-align: center;
+}
+
+#count{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 17px;
+    text-align: right;
+    margin-top: -50px;
+    border-radius: 50px;
+    background-color: bisque;
+}
+
+.cartTab{
+    width: 400px;
+    background-color: #353432;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+    z-index: 9822865;
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+    color: bisque;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab .btn button{
+    background-color: rgb(151, 255, 130);
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+    height: 60px;
+}
+.cartTab .btn .Zatvori{
+    background-color: bisque;
+}
+.cartTab .Lista .item img{
+    width: 100%;
+}
+.cartTab .Lista .item{
+    gap: 10px ;
+}
+.Lista .kolicina span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.Lista .kolicina span:nth-child(2){
+    background-color: transparent;
+    color: white;
+}
+.Lista .item:nth-child(even){
+    background-color: #eee1;
+}
+.Lista{
+    overflow: auto;
+}
+.Lista::-webkit-scrollbar{
+    width: 0;
+}
+.showCart .cartTab{
+    inset: 0 0 0 auto;
+}
+.showCart .container{
+    transform: translateX(-250px);
+}
+.kontejner{
+    transition: transform .5s;
+}
+#divZaPrikaz9{
+    text-align: justify;
+}
+.neces, .neces1{
+    display: inline-block;
+    width: fit-content;
+    margin-top: 25px;
+    text-align: justify;
+}
+.neces1{
+    margin-left: 150px;
+}
+.neces2{
+    width: 100%;
+}
+#ukupno{
+    font-size: large;
+    color: rgb(72, 215, 72);
+    margin-bottom: 100px;
+    height: fit-content;
+    padding-left: 35px;
+}
